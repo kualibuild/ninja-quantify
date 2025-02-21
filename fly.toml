@@ -1,0 +1,21 @@
+app            = 'ninja-quantify'
+primary_region = 'iad'
+kill_signal    = 'SIGINT'
+kill_timeout   = '5s'
+swap_size_mb   = 512
+
+[build]
+  [build.args]
+    ALLOWED_FRAME_URLS = 'grantrisk.kuali.co kualilabs.com'
+    DATABASE_TYPE      = 'postgresql'
+
+[http_service]
+  internal_port        = 3000
+  force_https          = true
+  min_machines_running = 1
+  processes            = ['app']
+
+[[vm]]
+  memory   = '256mb'
+  cpu_kind = 'shared'
+  cpus     = 1

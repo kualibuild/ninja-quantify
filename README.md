@@ -1,3 +1,8 @@
+# Fork of Umami
+Runs at [https://quantify.kuali.ninja](https://quantify.kuali.ninja)
+Tweaked to allow for embedding in other sites using the ALLOWED_FRAME_URLS setting.
+
+============================================================
 <p align="center">
   <img src="https://content.umami.is/website/images/umami-logo.png" alt="Umami Logo" width="100">
 </p>
